@@ -7,10 +7,12 @@
  <%= javascript_include_tag :defaults %>
  <%= csrf_meta_tag %>
  </head>
+ 
+ 
 
 <body id="store" >
 <div id="banner" >
-<%= image_tag("logo.png") %>
+
 <%= @page_title || "The Electronics Store" %>
 </div>
 <div id="columns" >
@@ -25,11 +27,11 @@
 
 
 </div>
-<a href="http://www.cnn.com" >Home</a><br />
-<a href="http://www.cnn.com" >Weekly Specials</a><br />
-<a href="http://www.cnn.com" >My Account</a><br />
-<a href="http://www.cnn.com" >Customer Service</a><br />
-<a href="http://www.cnn.com"" >Contact</a><br />
+<a href="http://shop.heroku.com/" >Home</a><br />
+<a href="http://shop.heroku.com/" >Weekly Specials</a><br />
+<a href="http://shop.heroku.com/" >My Account</a><br />
+<a href="http://shop.heroku.com/" >Customer Service</a><br />
+<a href="http://shop.heroku.com/">Contact</a><br />
 </div>
 <div id="main" >
 <%= yield %>

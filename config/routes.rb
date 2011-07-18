@@ -7,6 +7,8 @@ Shop9::Application.routes.draw do
 
   resources :products
   
+  match '/home', :to => 'store#index'
+  
   
   root :to => 'store#index', :as => 'store'
 

@@ -37,6 +37,8 @@ $ heroku rake db:migrate
 
 heroku db:push
 
+heroku rename railstutorial
+
 
 git push
 $ git push heroku

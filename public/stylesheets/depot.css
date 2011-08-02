@@ -1,62 +1,5 @@
 /* Global styles */
 
-#banner {
-background: #9c9;
-padding-top: 10px;
-padding-bottom: 10px;
-border-bottom: 2px solid;
-font: small-caps 40px/40px "Times New Roman", serif;
-color: #282;
-text-align: center;
-}
-#banner img {
-float: left;
-}
-#columns {
-background: #141;
-}
-
-
-#banner {
-background: #9c9;
-padding-top: 10px;
-padding-bottom: 10px;
-border-bottom: 2px solid;
-font: small-caps 40px/40px "Times New Roman", serif;
-color: #282;
-text-align: center;
-}
-#banner img {
-float: left;
-width:200px;
-height:50px;
-margin:1px;
-}
-#columns {
-background: #141;
-}
-
-#main {
-margin-left: 17em;
-padding-top: 4ex;
-padding-left: 2em;
-background: white;
-}
-#side {
-float: left;
-padding-top: 1em;
-padding-left: 1em;
-padding-bottom: 1em;
-width: 16em;
-background: #141;
-}
-#side a {
-color: #bfb;
-font-size: small;
-}
-
-
-
 #store #notice {
         color: #000;
         border: 2px solid red;
@@ -121,6 +64,161 @@ font-size: small;
   background:   #f8b0f8;
 }
 
+/* START:mainlayout */
+/* Styles for main page */
+
+#banner {
+  background: #9c9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid;
+  font: small-caps 40px/40px "Times New Roman", serif;
+  color: #282;
+  text-align: center;
+}
+
+#banner img {
+  float: left;
+}
+
+#columns {
+  background: #141;
+}
+
+#main {
+ 
+ 
+  background: white;
+}
+
+#side {
+  float: left; 
+  padding-left: 1em;
+  padding-bottom: 1em;
+  background: #141;
+}
+
+#side a {
+  color: #bfb;
+  font-size: small;
+}
+
+
+header {
+  padding-top: 2em;
+  padding-bottom:3px;
+  background:#00CC66;
+  margin-top:10px;
+  
+		
+
+}
+
+a {
+  color: #09c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #069;
+}
+
+
+nav {
+  padding-top: 2em;
+  
+}
+
+nav {
+ margin-top:19px;
+  background-color:#00EEEE;
+  padding: 0 0.7em;
+ 
+ 
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+nav ul li a:visited {
+  color: #09c;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color:white;
+  background: #FF6699;
+}
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+
+  
+
+
+nav {
+ margin-top:2em;
+ padding-top: 2em;
+
+  background-color:;
+  padding: 0 0.7em;
+ 
+ 
+}
+
+nav ul {
+padding-top: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+nav ul li a:visited {
+  color: #09c;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color:white;
+  background: #FF6699;
+}
+
+
+/* END:mainlayout */
+
 /* An entry in the store catalog */
 
 #store  .entry {
@@ -168,70 +266,40 @@ font-size: small;
   margin-right: 2em;
 }
 
-
-#banner {
-background: #9c9;
-padding-top: 10px;
-padding-bottom: 10px;
-border-bottom: 2px solid;
-font: small-caps 40px/40px "Times New Roman", serif;
-color: #282;
-text-align: center;
-}
-#banner img {
-float: left;
-}
-#columns {
-background: #141;
-}
-
-
-#main {
-margin-left: 17em;
-padding-top: 4ex;
-padding-left: 2em;
-background: white;
-}
-#side {
-float: left;
-padding-top: 1em;
-padding-left: 1em;
-padding-bottom: 1em;
-width: 16em;
-background: #141;
-}
-#side a {
-color: #bfb;
-font-size: small;
-}
-
+/* START:inline */
 #store .entry form, #store .entry form div {
-display: inline;
+  display: inline;
 }
+/* END:inline */
 
+/* START:cartmain */
+/* Styles for the cart in the main page */
 
 #store .cart_title {
-font: 120% bold;
+  font: 120% bold;
 }
+
 #store .item_price, #store .total_line {
-text-align: right;
+  text-align: right;
 }
+
 #store .total_line .total_cell {
-font-weight: bold;
-border-top: 1px solid #595;
+  font-weight: bold;
+  border-top: 1px solid #595;
 }
+/* END:cartmain */
+
+/* START:cartside */
+/* Styles for the cart in the sidebar */
 
 #cart, #cart table {
-font-size: smaller;
-color: white;
+  font-size: smaller;
+  color:     white;
 }
+
 #cart table {
-border-top: 1px dotted #595;
-border-bottom: 1px dotted #595;
-margin-bottom: 10px;
+  border-top:    1px dotted #595;
+  border-bottom: 1px dotted #595;
+  margin-bottom: 10px;
 }
-
-
-
-
-
+/* END:cartside */

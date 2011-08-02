@@ -1,0 +1,15 @@
+
+<div>
+
+ <%= render 'layouts/header'%>
+
+</div>
+
+
+</div>
+<a href="http://shop.heroku.com/" >Home</a><br />
+<a href="http://shop.heroku.com/" >Weekly Specials</a><br />
+<a href="http://shop.heroku.com/" >My Account</a><br />
+<a href="http://shop.heroku.com/" >Customer Service</a><br />
+<a href="http://shop.heroku.com/">Contact</a><br />
+</div>

@@ -1,4 +1,11 @@
-<div id="product_list" >
+
+<div class = "products span-10">
+<p>test</p>
+
+</div>
+
+
+<div id="product_list class = span-10">
 <h1>Listing products</h1>
 <table>
 <% @products.each do |product| %>
@@ -6,7 +13,7 @@
 <td>
 <%= image_tag(product.image_url, :class => 'list_image') %>
 </td>
-<td class="list_description" >
+<td class="list_description span-5" >
 <dl>
 <dt><%= product.title %></dt>
 <dd><%= truncate(strip_tags(product.description),
@@ -23,6 +30,7 @@
 </tr>
 <% end %>
 </table>
+</div>
 </div>
 <br />
 <%= link_to 'New product', new_product_path %>

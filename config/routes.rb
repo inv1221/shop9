@@ -1,4 +1,27 @@
 Shop9::Application.routes.draw do
+  # get "pages/test"
+
+  # get "pages/home"
+
+  # get "pages/contact"
+
+  # get "pages/catalog"
+
+  # get "pages/specials"
+
+  # get "pages/customer_service"
+  
+  
+     match '/home', :to => 'pages#home'
+     match '/contact', :to => 'pages#contact'
+     match '/store', :to => 'store#index'
+     match '/specials', :to => 'pages#specials'
+    
+     
+   
+
+  resources :orders
+
   resources :line_items
 
   resources :carts
@@ -7,7 +30,12 @@ Shop9::Application.routes.draw do
 
   resources :products
   
-  match '/home', :to => 'store#index'
+  resources :products do
+get :who_bought, :on => :member
+end
+    match '/Home', :to => 'pages#home'
+  match '/contact', :to => 'pages#contact'
+
   
   
   root :to => 'store#index', :as => 'store'

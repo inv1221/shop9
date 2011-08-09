@@ -33,8 +33,7 @@ Shop9::Application.routes.draw do
   resources :products do
 get :who_bought, :on => :member
 end
-    match '/Home', :to => 'pages#home'
-  match '/contact', :to => 'pages#contact'
+ 
 
   
   

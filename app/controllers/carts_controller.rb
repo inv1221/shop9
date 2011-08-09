@@ -29,13 +29,17 @@ end
   # GET /carts/new
   # GET /carts/new.xml
   def new
-    @cart = Cart.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @cart }
-    end
-  end
+        @cart = current_cart
+        if @cart.line_items.empty?
+        redirect_to store_url, :notice => "Your cart is empty"
+        return
+        end
+        @order = Order.new
+        respond_to do |format|
+        format.html # new.html.erb
+        format.xml { render :xml => @order }
+        end
+        end
 
   # GET /carts/1/edit
   def edit

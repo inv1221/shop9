@@ -1,11 +1,11 @@
 
-<div class = "products span-10">
-<p>test</p>
-
-</div>
+<div class = "products span-14">
 
 
-<div id="product_list class = span-10">
+
+
+
+<div id="product_list" class = "span-10">
 <h1>Listing products</h1>
 <table>
 <% @products.each do |product| %>
@@ -17,7 +17,7 @@
 <dl>
 <dt><%= product.title %></dt>
 <dd><%= truncate(strip_tags(product.description),
-:length => 80) %></dd>
+:length => 120) %></dd>
 </dl>
 </td>
 <td class="list_actions" >
@@ -34,3 +34,6 @@
 </div>
 <br />
 <%= link_to 'New product', new_product_path %>
+
+
+</div>

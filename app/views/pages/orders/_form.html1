@@ -10,13 +10,10 @@ prohibited this order from being saved:</h2>
 </ul>
 </div>
 <% end %>
-
-
 <div class="field" >
 <%= f.label :name %><br />
 <%= f.text_field :name, :size => 40 %>
 </div>
-
 
 <div class="field" >
 <%= f.label :address %><br />
